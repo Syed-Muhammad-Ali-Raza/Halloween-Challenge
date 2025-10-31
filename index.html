@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halloween CSS Art - A spooky animated scene created entirely with CSS featuring a haunted house, jack-o-lantern, ghost, bats, and more.">
     <title>Halloween CSS Art</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/sky.css">
@@ -13,53 +14,53 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <div class="scene">
+    <div class="scene" role="img" aria-label="Halloween scene with haunted house, glowing jack-o-lantern, floating ghost, flying bats, tombstones, and a moonlit night sky">
         <!-- Sky Background -->
-        <div class="sky">
-            <div class="moon"></div>
-            <div class="star star1"></div>
-            <div class="star star2"></div>
-            <div class="star star3"></div>
-            <div class="star star4"></div>
-            <div class="star star5"></div>
+        <div class="sky" aria-hidden="true">
+            <div class="moon" aria-label="Glowing full moon"></div>
+            <div class="star star1" aria-hidden="true"></div>
+            <div class="star star2" aria-hidden="true"></div>
+            <div class="star star3" aria-hidden="true"></div>
+            <div class="star star4" aria-hidden="true"></div>
+            <div class="star star5" aria-hidden="true"></div>
         </div>
 
         <!-- Ground -->
-        <div class="ground"></div>
+        <div class="ground" aria-hidden="true"></div>
 
         <!-- Haunted House -->
-        <div class="house">
+        <div class="house" aria-label="Haunted Victorian house with flickering candlelit windows and smoking chimney">
             <div class="house-body">
                 <div class="house-front">
                     <!-- Door -->
-                    <div class="door"></div>
-                    <div class="door-handle"></div>
+                    <div class="door" aria-hidden="true"></div>
+                    <div class="door-handle" aria-hidden="true"></div>
                     <!-- Windows -->
-                    <div class="window window-left"></div>
-                    <div class="window window-right"></div>
-                    <div class="window-light window-light-left"></div>
-                    <div class="window-light window-light-right"></div>
+                    <div class="window window-left" aria-hidden="true"></div>
+                    <div class="window window-right" aria-hidden="true"></div>
+                    <div class="window-light window-light-left" aria-hidden="true"></div>
+                    <div class="window-light window-light-right" aria-hidden="true"></div>
                 </div>
-                <div class="house-roof">
+                <div class="house-roof" aria-hidden="true">
                     <div class="roof-triangle"></div>
                 </div>
-                <div class="chimney"></div>
-                <div class="chimney-smoke smoke1"></div>
-                <div class="chimney-smoke smoke2"></div>
-                <div class="chimney-smoke smoke3"></div>
+                <div class="chimney" aria-hidden="true"></div>
+                <div class="chimney-smoke smoke1" aria-hidden="true"></div>
+                <div class="chimney-smoke smoke2" aria-hidden="true"></div>
+                <div class="chimney-smoke smoke3" aria-hidden="true"></div>
             </div>
         </div>
 
         <!-- Jack-o-Lantern -->
-        <div class="pumpkin">
-            <div class="pumpkin-body">
+        <div class="pumpkin" aria-label="Glowing jack-o-lantern with flickering candlelight">
+            <div class="pumpkin-body" aria-hidden="true">
                 <div class="pumpkin-segment"></div>
                 <div class="pumpkin-segment"></div>
                 <div class="pumpkin-segment"></div>
                 <div class="pumpkin-segment"></div>
                 <div class="pumpkin-segment"></div>
             </div>
-            <div class="pumpkin-face">
+            <div class="pumpkin-face" aria-hidden="true">
                 <div class="eye eye-left"></div>
                 <div class="eye eye-right"></div>
                 <div class="nose"></div>
@@ -68,41 +69,41 @@
                     <div class="tooth tooth-right"></div>
                 </div>
             </div>
-            <div class="pumpkin-light"></div>
-            <div class="pumpkin-stem"></div>
+            <div class="pumpkin-light" aria-hidden="true"></div>
+            <div class="pumpkin-stem" aria-hidden="true"></div>
         </div>
 
         <!-- Bats -->
-        <div class="bat bat1">
+        <div class="bat bat1" aria-label="Flying bat" aria-hidden="true">
             <div class="bat-body"></div>
             <div class="bat-wing wing-left"></div>
             <div class="bat-wing wing-right"></div>
         </div>
-        <div class="bat bat2">
+        <div class="bat bat2" aria-label="Flying bat" aria-hidden="true">
             <div class="bat-body"></div>
             <div class="bat-wing wing-left"></div>
             <div class="bat-wing wing-right"></div>
         </div>
-        <div class="bat bat3">
+        <div class="bat bat3" aria-label="Flying bat" aria-hidden="true">
             <div class="bat-body"></div>
             <div class="bat-wing wing-left"></div>
             <div class="bat-wing wing-right"></div>
         </div>
 
         <!-- Ghost -->
-        <div class="ghost">
-            <div class="ghost-head"></div>
-            <div class="ghost-body"></div>
-            <div class="ghost-eye eye-left"></div>
-            <div class="ghost-eye eye-right"></div>
-            <div class="ghost-arm arm-left"></div>
-            <div class="ghost-arm arm-right"></div>
+        <div class="ghost" aria-label="Floating ghost with wavy arms">
+            <div class="ghost-head" aria-hidden="true"></div>
+            <div class="ghost-body" aria-hidden="true"></div>
+            <div class="ghost-eye eye-left" aria-hidden="true"></div>
+            <div class="ghost-eye eye-right" aria-hidden="true"></div>
+            <div class="ghost-arm arm-left" aria-hidden="true"></div>
+            <div class="ghost-arm arm-right" aria-hidden="true"></div>
         </div>
 
         <!-- Tombstones -->
-        <div class="tombstone tombstone1"></div>
-        <div class="tombstone tombstone2"></div>
-        <div class="tombstone tombstone3"></div>
+        <div class="tombstone tombstone1" aria-label="Gravestone" aria-hidden="true"></div>
+        <div class="tombstone tombstone2" aria-label="Gravestone" aria-hidden="true"></div>
+        <div class="tombstone tombstone3" aria-label="Gravestone" aria-hidden="true"></div>
     </div>
 
     <script src="script.js"></script>
