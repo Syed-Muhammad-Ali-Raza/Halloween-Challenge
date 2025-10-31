@@ -38,6 +38,10 @@ Simply open `index.html` in your web browser to view the Halloween scene!
 
 No build process or dependencies required - it's pure HTML, CSS, and minimal JavaScript.
 
+## Preview
+
+<img width="1920" height="923" alt="Halloween CSS Art preview showing the haunted house scene with moon, bats, ghost, and jack-o-lantern" src="https://github.com/user-attachments/assets/c43b8ca2-7cf3-4013-9f14-20942ebbb648" />
+
 ##  File Structure
 
 ```
