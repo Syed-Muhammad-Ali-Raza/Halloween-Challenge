@@ -1,0 +1,29 @@
+/* Responsive Design */
+@media (max-width: 768px) {
+    .house-front {
+        width: 300px;
+        height: 280px;
+    }
+    
+    .roof-triangle {
+        border-left-width: 180px;
+        border-right-width: 180px;
+        border-bottom-width: 140px;
+    }
+    
+    .pumpkin {
+        left: 20px;
+        transform: scale(0.7);
+    }
+    
+    .ghost {
+        right: 50px;
+        transform: scale(0.8);
+    }
+    
+    .moon {
+        right: 50px;
+        width: 80px;
+        height: 80px;
+    }
+}

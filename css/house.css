@@ -1,0 +1,206 @@
+/* Haunted House */
+.house {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.house-body {
+    position: relative;
+}
+
+.house-front {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    background: #3d2817;
+    margin: 0 auto;
+    border: 3px solid #2a1a0f;
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.house-roof {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.roof-triangle {
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-bottom: 180px solid #5c2e1f;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+.roof-triangle::before {
+    content: '';
+    position: absolute;
+    top: 180px;
+    left: -220px;
+    width: 0;
+    height: 0;
+    border-left: 220px solid transparent;
+    border-right: 220px solid transparent;
+    border-bottom: 20px solid #4a2416;
+}
+
+.chimney {
+    position: absolute;
+    top: -250px;
+    right: -80px;
+    width: 60px;
+    height: 120px;
+    background: #4a2416;
+    border: 2px solid #3d1f12;
+}
+
+.chimney-smoke {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(200, 200, 200, 0.3);
+    animation: smoke 4s infinite;
+}
+
+.smoke1 {
+    width: 40px;
+    height: 40px;
+    top: -270px;
+    right: -70px;
+    animation-delay: 0s;
+}
+
+.smoke2 {
+    width: 60px;
+    height: 60px;
+    top: -300px;
+    right: -80px;
+    animation-delay: 1s;
+}
+
+.smoke3 {
+    width: 80px;
+    height: 80px;
+    top: -330px;
+    right: -90px;
+    animation-delay: 2s;
+}
+
+@keyframes smoke {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-100px) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Door */
+.door {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 140px;
+    background: #1a0f08;
+    border: 3px solid #2a1a0f;
+    border-radius: 5px 5px 0 0;
+}
+
+.door-handle {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+    background: #8b6914;
+    border-radius: 50%;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Windows */
+.window {
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background: #1a0f08;
+    border: 4px solid #2a1a0f;
+    border-radius: 5px;
+    top: 100px;
+}
+
+.window-left {
+    left: 60px;
+}
+
+.window-right {
+    right: 60px;
+}
+
+.window-light {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    border-radius: 2px;
+    top: 105px;
+    animation: flicker 2s infinite;
+}
+
+.window-light-left {
+    left: 65px;
+    background: radial-gradient(circle, #ffaa00 0%, #ff6600 50%, transparent 100%);
+    animation-delay: 0s;
+}
+
+.window-light-right {
+    right: 65px;
+    background: radial-gradient(circle, #ffaa00 0%, #ff6600 50%, transparent 100%);
+    animation-delay: 1s;
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+        opacity: 0.7;
+        transform: scale(0.95);
+    }
+    15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+}
+
+/* Cross window panes */
+.window::before,
+.window::after {
+    content: '';
+    position: absolute;
+    background: #2a1a0f;
+}
+
+.window::before {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    transform: translateY(-50%);
+}
+
+.window::after {
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    transform: translateX(-50%);
+}
